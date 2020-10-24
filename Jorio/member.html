@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+  <style>
+   .fill { 
+        min-height: 100%;
+        height: 100%;
+    }
+  </style>
+    <title>Jorio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
+        <a class="navbar-brand" href="index.html">JORIO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="container">
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    行程
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                      <a class="dropdown-item " href="Join_SC.html"><i class="fas fa-map-marked-alt"></i> 加入行程</a>
+                      <a class="dropdown-item" href="Create_SC.html"><i class="far fa-plus-square"></i> 建立行程</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    推薦區
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                      <a class="dropdown-item" href="itinerary_rmd.php"><i class="far fa-calendar-alt"></i> 行程</a>
+                      <a class="dropdown-item" href="attractions_rmd.php"><i class="fas fa-map-marker-alt"></i> 景點</a>
+                      <a class="dropdown-item" href="restaurant_rmd.php"><i class="fas fa-utensils"></i> 餐廳</a>
+                      <a class="dropdown-item" href="accommodation_rmd.php"><i class="fas fa-bed"></i> 住宿</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="content.html">留言區</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    網站簡介
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <a class="dropdown-item" href="webintro.html"><i class="far fa-address-card"></i> 網站介紹</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-sitemap"></i> 團隊</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-hands-helping"></i> 幫助</a>
+                    
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline ">
+                <input class="form-inline mr-sm-2 btn-search " type="search" style="border-radius:10px;" placeholder="搜尋" aria-label="Search">
+                <button class="btn btn-sm my-2 my-sm-3 btn-search" type="submit" >搜尋</button>
+              </form>
+     
+    </div>             
+        </div>
+        </div>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-member mr-sm-2 active" data-toggle="dropdown" >
+                <i class="fas fa-user"></i>
+            </button>
+              <div class="dropdown-menu dropdown-menu-right" style="min-width: 100px;">
+                  <div class="px-sm-1 py-1">
+                      <a class="dropdown-item" href="#">更新會員資料</a>
+                      <a class="dropdown-item" href="#">行程資訊</a>
+                      <a class="dropdown-item" href="#">推薦記錄</a>
+                      <a class="dropdown-item" href="#">網站內信箱</a>
+                      <a class="dropdown-item" href="#">登出</a>
+                  </div>
+              </div>
+          </div>
+      </nav>
+     
+      
+      <div class="section py-5"style="background-color: #90B9cc; height:100%;"  >
+          <div class="container">
+              <h5>會員專區</h5>
+      
+          <div class="row" >
+            <div class="col-md-3">
+                <div class="list-group sticky-top" >
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list"   >
+                       </i> 更新會員資料
+                    </a>  
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list" > 行程資訊</a>
+                    <a href="#pane-3" class="list-group-item list-group-item-action" data-toggle="list" >推薦記錄</a>
+                    <a href="#pane-4" class="list-group-item list-group-item-action" data-toggle="list" > 網站內信箱</a>
+                        <!-- disabled" tabindex="-1" aria-disabled="true -->
+                  </div>
+      
+                  
+            </div>
+            <div class="col-md-9">
+              <div class="tab-content">
+                <div class="tab-pane active" id="pane-1">
+                <div class="card-deck" >
+                  <div class="form">
+                    <ul>
+                    <br>修改密碼：<button class="btn btn-sm btn-light " href="modify_pwd.html">修改密碼</button>
+                    <br>郵箱地址:
+                    <br>地址:
+                  </ul>
+                  </div>
+                  </div>
+                  
+            </div>
+             <div class="tab-pane" id="pane-2">
+              <div class="card-deck" >
+                
+              </div>
+             </div>
+      
+             <div class="tab-pane" id="pane-3">
+              <div class="card-deck" >
+                
+              </div>
+               </div>
+      
+               <div class="tab-pane" id="pane-4">
+                <div class="card-deck" >
+                  
+                </div>
+                 </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div class="section py-5"style="background-color: #90B9cc; height:100%;"  >
+            <div class="container align-items-center text-center">
+            <h6>一瓶酒, 一群人,一想不到的旅程...
+       </h6>
+    </div>
+         </div>
+
+  <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
+    <div class="container"  >
+     <div> Copyright 2020 JORIO團隊</div>
+    </div>
+  
+  </footer>
+</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a9026f26e3.js" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+  
+</html>

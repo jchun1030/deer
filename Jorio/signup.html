@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <style>
+      body{
+        font-family: 'Ink Free','KaiTi','Samsung Sans';
+        font-size: 18px;
+        height: 100%;
+        margin: 0px; 
+       
+      }
+      .header-carousel-item {
+        height: 450px;
+        
+      }
+      .bg-cover{
+        background-size: cover;
+        background-position: center ;
+      }
+      .dropdown-menu{
+        font-size: 15px;
+      }
+      .fill { 
+        min-height: 100%;
+        height: 100%;
+    }
+    
+    
+    </style>
+    <title>Jorio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
+        <a class="navbar-brand" href="index.php">JORIO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="container">
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.php">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    行程
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                      <a class="dropdown-item " href="Join_SC.html"><i class="fas fa-map-marked-alt"></i> 加入行程</a>
+                      <a class="dropdown-item" href="Create_SC.html"><i class="far fa-plus-square"></i> 建立行程</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="signup.html">註冊</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="login.html">登入</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    推薦區
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                      <a class="dropdown-item" href="itinerary_rmd.php"><i class="far fa-calendar-alt"></i> 行程</a>
+                      <a class="dropdown-item" href="attractions_rmd.php"><i class="fas fa-map-marker-alt"></i> 景點</a>
+                      <a class="dropdown-item" href="restaurant_rmd.php"><i class="fas fa-utensils"></i> 餐廳</a>
+                      <a class="dropdown-item" href="accommodation_rmd.php"><i class="fas fa-bed"></i> 住宿</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="content.php">留言區</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    網站簡介
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <a class="dropdown-item" href="webintro.html"><i class="far fa-address-card"></i> 網站介紹</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-sitemap"></i> 團隊</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-hands-helping"></i> 幫助</a>
+                    
+                  </div>
+                </li>
+                
+              </ul>
+              <form class="form-inline ">
+                <input class="form-inline mr-sm-2 btn-search " type="search" style="border-radius:10px;" placeholder="搜尋" aria-label="Search">
+                <button class="btn btn-outline-primary btn-sm my-2 my-sm-0 btn-search" type="submit">搜尋</button>
+              </form>
+            </div>
+        </div>
+       
+      </nav>
+      <div class="section py-5" style="background-color: #90B9cc; " >
+      <div class="container-fluid" >
+          <div class="row justify-content-center align-items-center " >
+            <div class="col-md-4 my-4">
+            <div class="card  " style="width: 100%;">
+                    <div class="card-body ">
+                      <form>
+                        <div class="signup text-center" ><h4>註冊</h4></div>
+                        <div class="form-group ">
+                          <label for="inputName">姓名</label>
+                          <input type="text" class="form-control" id="inputName" placeholder="輸入姓名"  required>
+                        </div>
+                        
+                        <div class="form-row">
+                        
+                          <div class="form-group col-md-4">
+                            <label for="inputGender">性別</label>
+                            <select id="inputGender" class="form-control"  required>
+                              <option >男</option>
+                              <option>女</option>
+                              <option selected>其他</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-8">
+                            <label for="inputBirth">生日日期</label>
+                            <input type="Date" class="form-control" id="inputBirth"  required>
+                          </div>
+                        </div>
+                       
+                        <div class="form-group">
+                          <label for="inputPhoneNum">手機號碼</label>
+                          <input type="tel" class="form-control" id="inputPhoneNum" placeholder="手機號碼">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress">地址</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="輸入地址">
+                        </div>
+                        <div class="form-row">
+                          <label for="exampleInputEmail1">郵箱地址</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="輸入郵箱">
+                          <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">密碼</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="12" placeholder="密碼">
+                        </div>
+                      
+                        <button type="submit" id="signup" class="btn btn-outline-primary"  href="#" >註冊</button>
+                        
+                      </form>        
+                    
+        
+        
+          </div>
+                  </div>
+            
+          </div>
+      </div>
+      </div>
+    </div>
+  
+
+
+  <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
+    <div class="container"  >
+     <div> Copyright 2020 JORIO團隊</div>
+    </div>
+  
+  </footer>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a9026f26e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+  </body>
+</html>
