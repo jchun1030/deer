@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -56,30 +57,25 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
                       <a class="dropdown-item " href="Join_SC.html"><i class="fas fa-map-marked-alt"></i> 加入行程</a>
                       <a class="dropdown-item" href="Create_SC.html"><i class="far fa-plus-square"></i> 建立行程</a>
-                  </div>
+                    </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="signup.html">註冊</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="login.html">登入</a>
-                </li>
+                
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     推薦區
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                      <a class="dropdown-item" href="itinerary_rmd.php"><i class="far fa-calendar-alt"></i> 行程</a>
-                      <a class="dropdown-item" href="attractions_rmd.php"><i class="fas fa-map-marker-alt"></i> 景點</a>
-                      <a class="dropdown-item" href="restaurant_rmd.php"><i class="fas fa-utensils"></i> 餐廳</a>
-                      <a class="dropdown-item" href="accommodation_rmd.php"><i class="fas fa-bed"></i> 住宿</a>
+                      <a class="dropdown-item" href="itinerary_rmd.html"><i class="far fa-calendar-alt"></i> 行程</a>
+                      <a class="dropdown-item" href="attractions_rmd.html"><i class="fas fa-map-marker-alt"></i> 景點</a>
+                      <a class="dropdown-item" href="restaurant_rmd.html"><i class="fas fa-utensils"></i> 餐廳</a>
+                      <a class="dropdown-item" href="accommodation_rmd.html"><i class="fas fa-bed"></i> 住宿</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="content.php">留言區</a>
+                    <a class="nav-link active" href="content.html">留言區</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     網站簡介
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
@@ -88,59 +84,69 @@
                     <a class="dropdown-item" href="#"><i class="fas fa-hands-helping"></i> 幫助</a>
                     
                   </div>
-                </li>
+                </li>>
               </ul>
-              <form class="form-inline ">
-                <input class="form-inline mr-sm-2 btn-search " type="search" style="border-radius:10px;" placeholder="搜尋" aria-label="Search">
+              <form action="search.php" method="post" class="form-inline">
+                <input name="keyword" type="search" class="form-inline mr-sm-2 btn-search " id="keyword" placeholder="搜尋" style="border-radius:10px;" aria-label="Search">
                 <button class="btn btn-outline-primary btn-sm my-2 my-sm-0 btn-search" type="submit">搜尋</button>
               </form>
             </div>
         </div>
        
       </nav>
-      <div class="section py-5"style="background-color: #90B9cc; height:100%;"  >
-      <div class="container-fluid" >
-          <div class="row justify-content-center align-items-center " >
-              <div class="col-md-8">
-            <div class="card  " style="width: 100%; height:50%;">
-                    <div class="card-body ">
-                            <h3>網站簡介</h3>
-                            <h6>「揪旅友」，顧名思義，能在此網站揪到共同旅行的朋友，其英文諧音「JORIO」原為一義大利葡萄酒名，希冀此網站能讓使用者找到志同道合的旅行夥伴，一起陶醉其中，就像品好酒時一般愉快。
-                                </h6>
-                         <br>   <h6>現代社會愈來愈注重休閒，在忙碌完能好好犒賞自己，放鬆心靈，為之後的打拼做好準備。有鑑於此，我們打造「揪旅友」旅遊整合平台，涵蓋揪團、推薦行程、
-                              評價等功能，希冀使用者能透過此網站找到最適合自己的旅遊方式，不管是行程建議或旅伴。</h6>
-                              <br><h3>網站架構</h3>
-                              <div style="overflow:hidden; "> 
-                                    <img class="img-fluid" src="pic/lazy.png" alt='' /> 
-                                </div> 
-                           
-      </div>
-      </div>
-              </div>
-              </div>
-              </div>
-              </div>
-           
-
-              <div class="section py-5"style="background-color: #90B9cc;"  >
-                <div class="container align-items-center text-center">
-                <h7>一瓶酒, 一群人,一想不到的旅程...
-           </h7>
-        </div>
-             </div>
+<section style="background-color: #90B9cc; " >
+  <div class="container py-3"  >
+      <h2>留言區</h2>
+      <div class="from-group" style="width: 800px;">
+            <form action="#" method="post">
+            <h5 class="mt-0">暱稱：<input name="Nickname" type="text" id="Nickname" style="border-radius:10px;"></h5>
+              留言內容：
+            <textarea name="content"  rows="3" class="form-control" id="content"></textarea>
             
-           
-  
+            <input style="width:100px" type="submit" value="留言" class="button btn btn-light btn-block mt-2"></input>
+      </form>
+      
+      </div>
+
+      <table class="table ">
+        <div class="from-group ">
+          <br>
+          <hr class="style-line"/>
+          <h6 class="mt-0">暱稱：某某</h6>
+          
+          <p class="">留言內容：大家好！</p>
         
+          <hr class="style-two"/>
 
+          <h6 class="mt-0">暱稱：測試者</h6>
+          
+          <p class="">留言內容：大家好！</p>
+        
+          <hr class="style-two"/>
 
-  <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
-    <div class="container"  >
-     <div> Copyright 2020 JORIO團隊</div>
+          <h6 class="mt-0">暱稱：測試者</h6>
+          
+          <p class="">留言內容：嗨！</p>
+        
+          <hr class="style-two"/>
+        
     </div>
+      </table>
+  </div>
+       
   
-  </footer>
+
+</section>
+    <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
+      <div class="container"  >
+       <div> Copyright 2020 JORIO團隊</div>
+      </div>
+    
+    </footer>
+    
 </body>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -149,5 +155,5 @@
     <script src="https://kit.fontawesome.com/a9026f26e3.js" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-  
+    
 </html>
