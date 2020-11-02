@@ -22,7 +22,7 @@ hr{
 .resume{
 /*   display: flex; */
   max-width: 1000px; 
-  border: 5px solid #89B0AE;
+  border: 5px solid black;
   color: #4A6FA5;
   position: relative;
   overflow: hidden;
@@ -134,12 +134,12 @@ hr{
 }
 
 .sc{
-  width:250px;
+  width:300px;
   display:-webkit-box;
   display:flex;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
-  flex-direction:column;
+          flex-direction:column;
   position:relative;
   
 }
@@ -169,8 +169,7 @@ hr{
 
 .sc_content{
   display:inline-block;
-  width:180px;
-  font-size:15px;
+  width:265px;
   position:relative;
-  top:22px;
+  top:11px;
 }
