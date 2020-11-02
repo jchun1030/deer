@@ -29,15 +29,16 @@ hr{
   overflow: hidden;
   margin:50px auto;
   border-radius: 5px;
+  
 
 }
 .intro_form{
   position:relative;
-  left:50px;
   -webkit-box-align:center;
   align-items:center;
   padding-top:25px;
   text-align:center;
+  margin:0px auto;
 }
 .intro_form p{
   font-weight: bold;
@@ -52,12 +53,13 @@ hr{
   
 }
 .title h2{
-
+  display:inline-block;
+  width:250px;
+  line-height:18.5px;
   font-size:24px;
-  text-align:center;
-  line-height:16px;
   color:#555B6E;
   -webkit-text-stroke: 0.3px #000;
+  align-items: center;
 }
 .bottom{
   width:1000px;
