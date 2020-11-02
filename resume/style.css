@@ -173,3 +173,7 @@ hr{
   position:relative;
   top:11px;
 }
+.sc_content p{
+  font-size:18px;
+  font-weight:bold;
+}
