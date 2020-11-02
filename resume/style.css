@@ -152,10 +152,9 @@ hr{
   
 }
 .scfrom{
-  display:-webkit-box;
   display:flex;
   padding-left:25px;
-  padding-bottom:45px;
+  padding-bottom:25px;
 }
 .sc_title{
   width:5px; height:88px;
@@ -172,9 +171,9 @@ hr{
   display:inline-block;
   width:265px;
   position:relative;
-  top:11px;
+  top:5px;
 }
 .sc_content p{
-  font-size:18px;
+  font-size:16px;
   font-weight:bold;
 }
