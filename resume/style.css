@@ -51,10 +51,9 @@ hr{
   
 }
 .title h2{
-  height:10px;
-  font-size:25px;
+  font-size:24px;
   text-align:center;
-  line-height:10px;
+  line-height:16px;
   color:#555B6E;
   -webkit-text-stroke: 0.3px #000;
 }
