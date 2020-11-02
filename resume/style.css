@@ -15,12 +15,14 @@ html,body{
   height:260px;
 }
 .resume{
-/*   display: flex; */
   max-width: 1000px;             
-  border: solid 8px white;
-  padding: 10px;
+  border: solid 8px #BEE3DB;
+  
   position: relative;
   overflow: hidden;
+  margin:50px auto;
+  border-radius: 8px;
+  box-shadow: 5px 5px #89B0AE;
 }
 .intro_form{
   position:relative;
