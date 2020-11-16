@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -9,30 +8,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
-    <style>
-      html,body{
-        font-family: 'Ink Free','KaiTi','Samsung Sans';
-        font-size: 18px;
-        height: auto;
-        margin: 0px; 
-       
-      }
-      .header-carousel-item {
-        height: 450px;
-        
-      }
-      .bg-cover{
-        background-size: cover;
-        background-position: center ;
-      }
-      .dropdown-menu{
-        font-size: 15px;
-      }
-    
-    
-    </style>
     <title>Jorio</title>
   </head>
+  <style>
+    .col-md-8{
+      
+      position: relative;
+      align-items:center;
+      padding: 25px;
+      
+    }
+    .card{
+      background-color: #90B9cc;
+      box-shadow:4px 4px 3px rgba(0,0,0,0.3);
+    }
+    .button{
+      width:180px;
+      
+    }
+    .button:hover{
+      background-color: #343434;
+      color: white;
+    }
+  </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
         <a class="navbar-brand" href="index.html">JORIO</a>
@@ -53,96 +51,98 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
                       <a class="dropdown-item " href="Join_SC.html"><i class="fas fa-map-marked-alt"></i> 加入行程</a>
                       <a class="dropdown-item" href="Create_SC.html"><i class="far fa-plus-square"></i> 建立行程</a>
-                    </div>
+                  </div>
                 </li>
-                
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html">註冊</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="login.html">登入</a>
+                </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     推薦區
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                      <a class="dropdown-item" href="itinerary_rmd.html"><i class="far fa-calendar-alt"></i> 行程</a>
-                      <a class="dropdown-item" href="attractions_rmd.html"><i class="fas fa-map-marker-alt"></i> 景點</a>
-                      <a class="dropdown-item" href="restaurant_rmd.html"><i class="fas fa-utensils"></i> 餐廳</a>
-                      <a class="dropdown-item" href="accommodation_rmd.html"><i class="fas fa-bed"></i> 住宿</a>
+                    <a class="dropdown-item" href="#"><i class="far fa-calendar-alt"></i> 行程</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i> 景點</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-utensils"></i> 餐廳</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-bed"></i> 住宿</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="content.html">留言區</a>
+                    <a class="nav-link active" href="message.html">留言區</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     網站簡介
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
                     <a class="dropdown-item" href="webintro.html"><i class="far fa-address-card"></i> 網站介紹</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-sitemap"></i> 團隊</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-hands-helping"></i> 幫助</a>
                     
                   </div>
-                </li>>
+                </li>
               </ul>
-              <form action="search.php" method="post" class="form-inline">
-                <input name="keyword" type="search" class="form-inline mr-sm-2 btn-search " id="keyword" placeholder="搜尋" style="border-radius:10px;" aria-label="Search">
-                <button class="btn btn-outline-primary btn-sm my-2 my-sm-0 btn-search" type="submit">搜尋</button>
+              <form class="form-inline ">
+                <input class="form-inline mr-sm-2 btn-search " type="search" style="border-radius:10px;" placeholder="搜尋" aria-label="Search">
+                <button class="btn btn-sm my-2 my-sm-0 btn-search" type="submit">搜尋</button>
               </form>
             </div>
         </div>
        
       </nav>
-<section style="background-color: #90B9cc; " >
-  <div class="container py-3"  >
-      <h2>留言區</h2>
-      <div class="from-content">
-            <form action="#" method="post">
-            <h5 class="mt-0">暱稱：<input name="Nickname" type="text" id="Nickname" style="border-radius:10px;"></h5>
-              留言內容：
-            <textarea name="content"  rows="3" class="form-control" id="content"></textarea>
-            
-            <input style="width:100px" type="submit" value="留言" class="button btn btn-light btn-block mt-2"></input>
-      </form>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 ">
+                <div class="card">
+                    <h5 class="card-header">留言區</h5>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                            <div class="media-body">
+                                <div class="from-group ">
+                                    <h5 class="mt-0">暱稱 : <input type="text" id="Nickname"></h5>
+                                    留言內容：
+                                    <textarea class="form-control"  rows="3"></textarea>
+                                    <div class="button btn btn-light btn-block mt-2">留言</div>
+                                  </div>
+                            </div>
+                          </li>
+                          <li class="media my-4">
+                              
+                              <div class="media-body">
+                                  <div class="from-group ">
+                                      <h6 class="mt-0">暱稱：</h6>
+                                      留言內容：
+                                      <p class=""></p>
+                                  </div>
+                                </li>
+                                <li class="media">
+                                  <div class="media-body">
+                                      <div class="from-group ">
+                                          <h6 class="mt-0">暱稱：</h6>
+                                          留言內容：
+                                          <p class=""></p>
+                                      </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                      
+                          
+                        </div>
+                    </div>
+                  </div>
+      </div>
+
       
-      </div>
-
-      <table class="table ">
-        <div class="from-group ">
-          <br>
-          <hr class="style-line"/>
-          <h6 class="mt-0">暱稱：某某</h6>
-          
-          <p class="">留言內容：大家好！</p>
-        
-          <hr class="style-two"/>
-
-          <h6 class="mt-0">暱稱：測試者</h6>
-          
-          <p class="">留言內容：大家好！</p>
-        
-          <hr class="style-two"/>
-
-          <h6 class="mt-0">暱稱：測試者</h6>
-          
-          <p class="">留言內容：嗨！</p>
-        
-          <hr class="style-two"/>
-        
+  <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
+    <div class="container"  >
+     <div> Copyright 2020 JORIO團隊</div>
     </div>
-      </table>
-  </div>
-       
   
-
-</section>
-    <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
-      <div class="container"  >
-       <div> Copyright 2020 JORIO團隊</div>
-      </div>
-    
-    </footer>
-    
+  </footer>
 </body>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
