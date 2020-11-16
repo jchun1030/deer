@@ -8,29 +8,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
+    <style>
+      html,body{
+        font-family: 'Ink Free','KaiTi','Samsung Sans';
+        font-size: 18px;
+        height: 100%;
+        margin: 0px; 
+       
+      }
+      .header-carousel-item {
+        height: 450px;
+        
+      }
+      .bg-cover{
+        background-size: cover;
+        background-position: center ;
+      }
+      .dropdown-menu{
+        font-size: 15px;
+      }
+      .fill { 
+        min-height: 100%;
+        height: 100%;
+    }
+    
+    
+    </style>
     <title>Jorio</title>
   </head>
-  <style>
-    .col-md-8{
-      
-      position: relative;
-      align-items:center;
-      padding: 25px;
-      
-    }
-    .card{
-      background-color: #90B9cc;
-      box-shadow:4px 4px 3px rgba(0,0,0,0.3);
-    }
-    .button{
-      width:180px;
-      
-    }
-    .button:hover{
-      background-color: #343434;
-      color: white;
-    }
-  </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
         <a class="navbar-brand" href="index.html">JORIO</a>
@@ -48,7 +53,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     行程
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" >
                       <a class="dropdown-item " href="Join_SC.html"><i class="fas fa-map-marked-alt"></i> 加入行程</a>
                       <a class="dropdown-item" href="Create_SC.html"><i class="far fa-plus-square"></i> 建立行程</a>
                   </div>
@@ -71,7 +76,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="message.html">留言區</a>
+                    <a class="nav-link" href="content.html">留言區</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -91,51 +96,53 @@
         </div>
        
       </nav>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 ">
-                <div class="card">
-                    <h5 class="card-header">留言區</h5>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li class="media">
-                            <div class="media-body">
-                                <div class="from-group ">
-                                    <h5 class="mt-0">暱稱 : <input type="text" id="Nickname"></h5>
-                                    留言內容：
-                                    <textarea class="form-control"  rows="3"></textarea>
-                                    <div class="button btn btn-light btn-block mt-2">留言</div>
-                                  </div>
-                            </div>
-                          </li>
-                          <li class="media my-4">
-                              
-                              <div class="media-body">
-                                  <div class="from-group ">
-                                      <h6 class="mt-0">暱稱：</h6>
-                                      留言內容：
-                                      <p class=""></p>
-                                  </div>
-                                </li>
-                                <li class="media">
-                                  <div class="media-body">
-                                      <div class="from-group ">
-                                          <h6 class="mt-0">暱稱：</h6>
-                                          留言內容：
-                                          <p class=""></p>
-                                      </div>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-                      
-                          
-                        </div>
-                    </div>
-                  </div>
-      </div>
+    
+      <section class="py-3"style="background-color: #90B9cc; height:100%">
+        <div class="container">
+          <div class="row row-cols-md-3">
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img src="https://edge.media.datahc.com/HI363968068.jpg"  class="card-img-top" style="height: 180px;" alt="...">
+                <div class="card-body">
+                  
+                  <h6 class="card-title">台北精品飯店</h6>
+                  <p class="card-text"></p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img src="https://edge.media.datahc.com/HI513770178.jpg" class="card-img-top" style="height: 180px;" alt="...">
+                <div class="card-body">
+                <h6 class="card-title">康橋大飯店六合夜市<br>七賢館</h6>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img src="https://edge.media.datahc.com/HI343947543.jpg" class="card-img-top" style="height: 180px;" alt="...">
+                <div class="card-body">
+                <h6 class="card-title">太空艙衡陽館</h6>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      
+
   <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
     <div class="container"  >
      <div> Copyright 2020 JORIO團隊</div>
@@ -151,5 +158,5 @@
     <script src="https://kit.fontawesome.com/a9026f26e3.js" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    
+  
 </html>
