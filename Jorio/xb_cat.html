@@ -110,8 +110,34 @@
                     <div class="card-body">
                       <h5 class="card-title">預計成團人數：4</h5>
                       <p class="card-text">時間：2020/03/17<br>地點：平溪<br>價格：NTW200(不包含午餐)</p>
-                     <br> <a href="#" class="btn" style="position:absolute; bottom:10px;">加入行程
-                    
+                     <br><a class="btn" href="#"data-toggle="modal" data-target="#fgp" style="position:absolute; bottom:10px;" name="forget_password">加入行程</a>
+                      
+            <div class="modal fade" id="fgp">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h5 class="modal-title">團長設立了加入行程問題<br><small>(回答問題加入團員甄選)</small></h5>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        
+                        <label for="exampleInputEmail1">自我介紹</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="輸入您的回答">
+                       <br> <button type="submit" class="btn btn-outline-primary" onclick="msg()">加入甄選</button>
+                      </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">關閉視窗</button>
+                    </div>
+              
+                  </div>
+                </div>
+            </div>
                     </a>
                     </div>
                   </div>
@@ -519,7 +545,11 @@
     </div>
   
   </footer>
- 
+  <script>
+    function msg(){
+      alert('成功加入甄選');
+    }
+  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
