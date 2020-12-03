@@ -80,14 +80,14 @@
             </button>
               <div class="dropdown-menu dropdown-menu-right" style="min-width: 100px;">
                   <div class="px-sm-1 py-1">
-                      <a class="dropdown-item" href="#">更新會員資料</a>
-                      <a class="dropdown-item" href="#">行程資訊</a>
-                      <a class="dropdown-item" href="#">推薦記錄</a>
-                      <a class="dropdown-item" href="#">網站內信箱</a>
-                      <a class="dropdown-item" href="#">登出</a>
+                    <a class="dropdown-item" href="member.html">更新會員資料</a>
+                    <a class="dropdown-item" href="member.html">行程資訊</a>
+                    <a class="dropdown-item" href="member.html">推薦記錄</a>
+                    <a class="dropdown-item" href="member.html">網站內信箱</a>
+                    <a class="dropdown-item" href="#" onclick="logout()">登出</a>
                   </div>
               </div>
-          </div>
+        </div>
       </nav>
      
       
@@ -159,6 +159,12 @@
   
   </footer>
 </body>
+    <script>
+      function logout(){
+        alert("登出成功");
+        window.location = 'index.html';
+      }
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

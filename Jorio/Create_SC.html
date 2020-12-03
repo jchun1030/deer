@@ -90,12 +90,20 @@
             </div>
         </div>
        
-       <div class="dropdown ml-auto">
-            <button class="btn btn-sm btn-member mr-sm-2 " data-toggle="dropdown" data-flip="false">
-                <i class="fas fa-user"></i>
-            </button>
-              
-          </div>
+        <div class="dropdown ml-auto">
+          <button class="btn btn-sm btn-member mr-sm-2 active" data-toggle="dropdown" >
+              <i class="fas fa-user"></i>
+          </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 100px;">
+                <div class="px-sm-1 py-1">
+                    <a class="dropdown-item" href="member.html">更新會員資料</a>
+                    <a class="dropdown-item" href="member.html">行程資訊</a>
+                    <a class="dropdown-item" href="member.html">推薦記錄</a>
+                    <a class="dropdown-item" href="member.html">網站內信箱</a>
+                    <a class="dropdown-item" href="#" onclick="logout()">登出</a>
+                </div>
+            </div>
+      </div>
        
       </nav>
       <div class="section py-6" style="background-color: #90B9cc; " >
@@ -105,7 +113,7 @@
             <div class="card " style="width: 100%;">
                     <div class="card-body ">
                      
-                      <form action="php/create_sc1.php" method="post">
+                      <form action="#" method="post"></form>
                         <div class="signup text-center" ><h4>建立行程</h4></div>
                         <div class="form-group ">
                           <label for="inputName">行程名稱</label>
@@ -170,7 +178,7 @@
                       </div>
                           </div>
                           
-                       <br> <button type="submit" id="signup" class="btn btn-outline-primary">建立行程</button>
+                       <br> <button type="submit" id="signup" class="btn btn-outline-primary" onclick="createsc()">建立行程</button>
                           
 
                       </form>        
@@ -193,7 +201,16 @@
     </div>
   
   </footer>
- 
+    <script>
+      function logout(){
+        alert("登出成功");
+        window.location = 'index.html';
+      }
+      function createsc(){
+        alert("建立成功");
+        window.location = 'Join_SC.html';
+      }
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -204,17 +221,17 @@
     <script src="summernote-bs4.js"></script>
     <script>
     $('#summernote').summernote({
-      toolbar: [
-  ['style', ['style']],
-  ['font', ['bold', 'underline', 'clear']],
-  ['fontname', ['fontname']],
-  ['color', ['color']],
-  ['para', ['ul', 'ol', 'paragraph']],
-  ['table', ['table']],
-  ['insert', [ 'picture']],
-  ['view', ['fullscreen', 'help']]
-]
-});
+          toolbar: [
+      ['style', ['style']],
+      ['font', ['bold', 'underline', 'clear']],
+      ['fontname', ['fontname']],
+      ['color', ['color']],
+      ['para', ['ul', 'ol', 'paragraph']],
+      ['table', ['table']],
+      ['insert', [ 'picture']],
+      ['view', ['fullscreen', 'help']]
+    ]
+    });
 
   
 
