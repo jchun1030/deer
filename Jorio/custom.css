@@ -103,10 +103,18 @@ a:hover{
 .btn-outline-primary:focus{
     background-color: #fff;
 }
+.member-form li{
+    list-style: none;
+    padding: 10px;
+}
 .btn-member{
-    background-color: transparent;
-    color:gray;
-    width: small;
+    background-color: #fafafa;
+    width: 100px;
+    color:black;
+    font-size:15px;
+}
+.member-form li{
+
 }
 .dropdown-menu-right{
     right: 0;

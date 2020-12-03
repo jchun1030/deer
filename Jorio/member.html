@@ -13,15 +13,12 @@
         height: 100%;
         margin: 0px; 
       }
-   .fill { 
-        min-height: 100%;
-        height: 100%;
-    }
+   
   </style>
     <title>Jorio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
         <a class="navbar-brand" href="index.html">JORIO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -75,7 +72,7 @@
         </div>
         </div>
         <div class="dropdown ml-auto">
-            <button class="btn btn-sm btn-member mr-sm-2 active" data-toggle="dropdown" >
+            <button class="btn btn-sm mr-sm-2 active" data-toggle="dropdown" >
                 <i class="fas fa-user"></i>
             </button>
               <div class="dropdown-menu dropdown-menu-right" style="min-width: 100px;">
@@ -88,7 +85,7 @@
                   </div>
               </div>
         </div>
-      </nav>
+  </nav>
      
       
       <div class="section py-5"style="background-color: #90B9cc; height:100%;"  >
@@ -97,7 +94,7 @@
       
           <div class="row" >
             <div class="col-md-3">
-                <div class="list-group sticky-top" >
+                <div class="list-group" >
                     <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list"   >
                        </i> 更新會員資料
                     </a>  
@@ -113,11 +110,42 @@
               <div class="tab-content">
                 <div class="tab-pane active" id="pane-1">
                 <div class="card-deck" >
-                  <div class="form">
+                  <div class="member-form">
                     <ul>
-                    <br>修改密碼：<button class="btn btn-sm btn-light " href="modify_pwd.html">修改密碼</button>
-                    <br>郵箱地址:
-                    <br>地址:
+                    
+                    <li><h6>郵箱地址:</h6></li>
+                    <li><h6>地址:</h6></li>
+                    <li><h6>修改密碼:</h6>
+                    <a class="btn btn-member" href="#" onclick="close()"  data-toggle="modal" data-target="#fgp" name="modify_password" >修改密碼</a>
+                    <div class="modal fade" id="fgp">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h5 class="modal-title">修改密碼：</h5>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                
+                                <label for="OInputPassword">請輸入舊的密碼</label>
+                                <input type="password" class="form-control" id="OInputPassword" aria-describedby="oldpassword" placeholder="輸入舊的密碼">
+                                <br><label for="NInputPassword">請輸入新的密碼</label>
+                                <input type="password" class="form-control" id="NInputPassword" aria-describedby="newpassword" placeholder="輸入新的密碼">
+                              <br> <button class="btn btn-outline-primary" type="submit">修改密碼</button>
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">關閉視窗</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                    </div>
+                    </li>
                   </ul>
                   </div>
                   </div>
@@ -144,25 +172,28 @@
           </div>
           </div>
           </div>
+      </div>
+      <div class="section py-3"style="background-color: #90B9cc; height:100%;"  >
+        <div class="container align-items-center text-center">
+          <h6>一瓶酒, 一群人,一想不到的旅程...
+        </h6>
         </div>
-        <div class="section py-5"style="background-color: #90B9cc; height:100%;"  >
-            <div class="container align-items-center text-center">
-            <h6>一瓶酒, 一群人,一想不到的旅程...
-       </h6>
-    </div>
-         </div>
+      </div>
 
   <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
     <div class="container"  >
      <div> Copyright 2020 JORIO團隊</div>
     </div>
-  
   </footer>
 </body>
     <script>
       function logout(){
         alert("登出成功");
         window.location = 'index.html';
+      }
+      function close(){
+        alert("修改成功,請重新登入");
+        window.location = 'login.html';
       }
     </script>
     <!-- Optional JavaScript -->
