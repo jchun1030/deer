@@ -6,7 +6,7 @@
 @media (min-width: 576px) { 
     html,body{
         font-family: 'JasonHandwriting1';
-        font-size: 16px;
+        font-size: 14px;
         margin: 0; 
         padding: 0;
         width: 100%;
@@ -121,9 +121,6 @@ a:hover{
     color:black;
     font-size:15px;
 }
-.member-form li{
-
-}
 .dropdown-menu-right{
     right: 0;
     left: auto;
@@ -180,4 +177,8 @@ a:hover{
 }
 .res-rmd{
     padding:5px;
+}
+footer{
+    background-color:#343434;
+    color:white;
 }

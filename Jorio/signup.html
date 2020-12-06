@@ -96,29 +96,27 @@
         </div>
        
       </nav>
-      <div class="section" style="background-color: #90B9cc;" >
+      <div class="section">
       <div class="container-fluid" >
           <div class="row justify-content-center align-items-center " >
-            <div class="col-6 sing-up" >
+            <div class="col-4 sing-up" >
             <div class="card" style="width: 100%;">
                     <div class="card-body" >
                       <form>
-                        <div class="signup text-center" ><h4>註冊</h4></div>
+                        <div class="signup text-center " ><h4>註冊</h4></div>
                         <div class="row">
-                          
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-5">
                           <label for="inputName">姓名</label>
                           <input type="text" class="form-control" id="inputName" placeholder="輸入姓名"  required>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-5">
                           <label for="exampleInputPassword1">密碼</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="12" placeholder="密碼">
+                          <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="12" placeholder="密碼" required>
                         </div>
                         </div>
                         
-                        <div class="form-row">
-                        
-                          <div class="form-group col-md-4">
+                        <div class="row">
+                          <div class="form-group  col-5">
                             <label for="inputGender">性別</label>
                             <select id="inputGender" class="form-control"  required>
                               <option >男</option>
@@ -126,26 +124,26 @@
                               <option selected>其他</option>
                             </select>
                           </div>
-                          <div class="form-group col-md-8">
+                          <div class="form-group col-5">
                             <label for="inputBirth">生日日期</label>
                             <input type="Date" class="form-control" id="inputBirth"  required>
                           </div>
                         </div>
-                       
-                        <div class="form-group">
+                        <div class="row">
+                        <div class="form-group col-8">
                           <label for="inputPhoneNum">手機號碼</label>
-                          <input type="tel" class="form-control" id="inputPhoneNum" placeholder="手機號碼">
+                          <input type="tel" class="form-control" id="inputPhoneNum" placeholder="手機號碼" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-8">
                           <label for="inputAddress">地址</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="輸入地址">
+                          <input type="text" class="form-control" id="inputAddress" placeholder="輸入地址" required>
                         </div>
-                        <div class="form-row">
+                        <div class="form-row col-8">
                           <label for="exampleInputEmail1">郵箱地址</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="輸入郵箱">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="輸入郵箱" required>
                           <small id="emailHelp" class="form-text text-muted"></small>
                         </div>
-                        
+                      </div>
                         <br>
                         <button type="submit" id="signup" class="btn btn-outline-primary"  href="#" >註冊</button>
                         
@@ -163,12 +161,11 @@
   
 
 
-  <footer class=" mastfoot mt-auto text-center py-2" style="background-color: #343434; color:aliceblue " >
-    <div class="container"  >
-     <div> Copyright 2020 JORIO團隊</div>
-    </div>
-  
-  </footer>
+      <footer class="footer mt-auto py-2 text-center">
+        <div class="container">
+          <span>Copyright 2020 JORIO團隊</span>
+        </div>
+      </footer>
  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
