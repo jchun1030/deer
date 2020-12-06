@@ -1,58 +1,66 @@
+@font-face{
+    font-family: JasonHandwriting1;
+    src:url('fonts/JasonHandwriting1.ttf');
+}
 
 @media (min-width: 576px) { 
-    .html,body{
-        font-family: 'Ink Free','KaiTi','Samsung Sans';
+    html,body{
+        font-family: 'JasonHandwriting1';
         font-size: 16px;
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%;
+        
+      }
+      body{
         background-color:#90B9cc; 
       }
-
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-    .html,body{
-        font-family: 'Ink Free','KaiTi','Samsung Sans';
+    html,body{
+        font-family: 'JasonHandwriting1';
         font-size: 15px;
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%; 
-        background-color:#90B9cc;     
+ 
       }
-      /* .res,.iti,.att{
-        width:150px;
-        padding:10px;
-    } */
+      body{
+        background-color:#90B9cc; 
+      }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-    .html,body{
-        font-family: 'Ink Free','KaiTi','Samsung Sans';
+    html,body{
+        font-family: 'JasonHandwriting1';
         font-size: 16px;
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%;
+      }
+      body{
         background-color:#90B9cc; 
       }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-    .html,body{
-        font-family: 'Ink Free','KaiTi','Samsung Sans';
+    html,body{
+        font-family: 'JasonHandwriting1';
         font-size: 16px;
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%;
+      }
+      body{
         background-color:#90B9cc; 
-
       }
  }
 
