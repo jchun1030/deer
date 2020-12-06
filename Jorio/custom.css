@@ -6,32 +6,28 @@
 @media (min-width: 576px) { 
     html,body{
         font-family: 'JasonHandwriting1';
-        font-size: 14px;
+        font-size: 12px;
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%;
         
       }
-      body{
-        background-color:#90B9cc; 
-      }
+      
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
     html,body{
         font-family: 'JasonHandwriting1';
-        font-size: 15px;
+        font-size: 14px;
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%; 
  
       }
-      body{
-        background-color:#90B9cc; 
-      }
+      
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -44,9 +40,7 @@
         width: 100%;
         height: 100%;
       }
-      body{
-        background-color:#90B9cc; 
-      }
+      
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -58,12 +52,10 @@
         padding: 0;
         width: 100%;
         height: 100%;
+        
       }
-      body{
-        background-color:#90B9cc; 
-      }
+      
  }
-
 .dropdown-item{
     font-size: 15px;
 }
