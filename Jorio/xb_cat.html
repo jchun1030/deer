@@ -8,7 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
+    <style>
+      body{
+        background-color: #90B9cc; 
+        height: 100vh;
+      }
+      .sc{
+        padding: 15px;
+      }
 
+    </style>
     <title>Jorio</title>
   </head>
   <body>
@@ -71,8 +80,8 @@
         </div>
        
       </nav>
-      <section class="py-3"style="background-color: #90B9cc; height: 100vh;">
-      <div class="container py-3">
+      <section style="background-color: #90B9cc; height: 100vh;">
+      <div class="container sc">
       <div class="row">
         <div class="col-sm-8">
           <div class="card">
@@ -147,7 +156,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container sc">
       <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -519,13 +528,14 @@
     </div>
     </div>
 
-</section>
+    <footer class="footer mt-auto py-2 text-center">
+      <div class="container">
+        <span>Copyright 2020 JORIO團隊</span>
+      </div>
+    </footer>
+  </section>
 
-<footer class="footer mt-auto py-2 text-center">
-  <div class="container">
-    <span>Copyright 2020 JORIO團隊</span>
-  </div>
-</footer>
+
   <script>
     function msg(){
       alert('成功加入甄選');
