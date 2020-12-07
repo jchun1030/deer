@@ -1,11 +1,11 @@
-@font-face{
+/* @font-face{
     font-family: JasonHandwriting1;
     src:url('fonts/JasonHandwriting1.ttf');
-}
+} */
 
 @media (min-width: 576px) { 
     html,body{
-        font-family: 'JasonHandwriting1';
+        font-family: '微軟正黑體';
         font-size: 12px;
         margin: 0; 
         padding: 0;
@@ -19,7 +19,7 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
     html,body{
-        font-family: 'JasonHandwriting1';
+        font-family: '微軟正黑體';
         font-size: 14px;
         margin: 0; 
         padding: 0;
@@ -27,13 +27,16 @@
         height: 100%; 
  
       }
+    .join-sc{
+        width:250px;
+    }
       
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
     html,body{
-        font-family: 'JasonHandwriting1';
+        font-family: '微軟正黑體';
         font-size: 16px;
         margin: 0; 
         padding: 0;
@@ -46,7 +49,7 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
     html,body{
-        font-family: 'JasonHandwriting1';
+        font-family: '微軟正黑體';
         font-size: 16px;
         margin: 0; 
         padding: 0;
