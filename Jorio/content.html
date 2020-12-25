@@ -1,170 +1,202 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom.css">
-    <title>Jorio</title>
-  </head>
-  <style>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    .card{
-      box-shadow:4px 4px 3px rgba(0,0,0,0.3);
-    }
-    .button{
-      width:180px;
-      
-    }
-    .button:hover{
-      background-color: #343434;
-      color: white;
-    }
-  </style>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
-        <a class="navbar-brand" href="index.html">JORIO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="container">
-            
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    行程
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                      <a class="dropdown-item " href="Join_SC.html"><i class="fas fa-map-marked-alt"></i> 加入行程</a>
-                      <a class="dropdown-item" href="Create_SC.html"><i class="far fa-plus-square"></i> 建立行程</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="signup.html">註冊</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="login.html">登入</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    推薦區
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                      <a class="dropdown-item" href="itinerary_rmd.html"><i class="far fa-calendar-alt"></i> 行程</a>
-                      <a class="dropdown-item" href="attractions_rmd.html"><i class="fas fa-map-marker-alt"></i> 景點</a>
-                      <a class="dropdown-item" href="restaurant_rmd.html"><i class="fas fa-utensils"></i> 餐廳</a>
-                      <a class="dropdown-item" href="accommodation_rmd.html"><i class="fas fa-bed"></i> 住宿</a>
-                  </div>
-                </li>
-                <li class="nav-item  active" >
-                    <a class="nav-link" href="content.html">留言區</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    網站簡介
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                    <a class="dropdown-item" href="webintro.html"><i class="far fa-address-card"></i> 網站介紹</a>
-                    
-                  </div>
-                </li>
-              </ul>
-              <form class="form-inline ">
-                <input class="form-inline mr-sm-2 btn-search " type="search" style="border-radius:10px;" placeholder="搜尋" aria-label="Search">
-                <button class="btn btn-sm my-2 my-sm-0 btn-search" type="submit">搜尋</button>
-              </form>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="custom.css">
+  <title>Jorio</title>
+</head>
+<style>
+  .content {
+    margin: 0 auto;
+    padding: 10px;
+    letter-spacing: 1px
+  }
+
+  .card {
+    background-color: #90B9cc;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+
+  .button {
+    width: 180px;
+  }
+
+  .button:hover {
+    background-color: #343434;
+    color: white;
+  }
+
+  input,
+  textarea {
+    border-radius: 3px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343434;">
+    <a class="navbar-brand" href="index.html">JORIO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              行程
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item " href="Join_SC.html"><i class="fas fa-map-marked-alt"></i> 加入行程</a>
+              <a class="dropdown-item" href="Create_SC.html"><i class="far fa-plus-square"></i> 建立行程</a>
             </div>
-        </div>
-       
-      </nav>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 ">
-                <div class="card">
-                    <h5 class="card-header">留言區</h5>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                          <li class="media">
-                            <div class="media-body">
-                                <div class="from-group ">
-                                    <h5 class="mt-0">暱稱 : <input type="text" id="Nickname"></h5>
-                                    留言內容：
-                                    <textarea class="form-control"  rows="3"></textarea>
-                                    <div class="button btn btn-light btn-block mt-2" type="submit" onclick="content()">留言</div>
-                                  </div>
-                            </div>
-                          </li>
-                          <li class="media my-4">
-                              
-                              <div class="media-body">
-                                  <div class="from-group ">
-                                      <h6 class="mt-0">暱稱：</h6>
-                                      留言內容：
-                                      <p class=""></p>
-                                  </div>
-                          </li>
-                          <li class="media my-4">
-                                  <div class="media-body">
-                                      <div class="from-group ">
-                                          <h6 class="mt-0">暱稱：</h6>
-                                          留言內容：
-                                          <p class=""></p>
-                                      </div>
-                                  </div>
-                          </li>
-                          <li class="media my-4">
-                            <div class="media-body">
-                                <div class="from-group ">
-                                    <h6 class="mt-0">暱稱：</h6>
-                                    留言內容：
-                                    <p class=""></p>
-                                </div>
-                            </div>
-                          </li>
-                          <li class="media my-4">
-                            <div class="media-body">
-                                <div class="from-group ">
-                                    <h6 class="mt-0">暱稱：</h6>
-                                    留言內容：
-                                    <p class=""></p>
-                                </div>
-                            </div>
-                          </li>
-                        </ul>
-                    </div>
-                      
-                          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">註冊</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="login.html">登入</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              推薦區
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="itinerary_rmd.html"><i class="far fa-calendar-alt"></i> 行程</a>
+              <a class="dropdown-item" href="attractions_rmd.html"><i class="fas fa-map-marker-alt"></i> 景點</a>
+              <a class="dropdown-item" href="restaurant_rmd.html"><i class="fas fa-utensils"></i> 餐廳</a>
+              <a class="dropdown-item" href="accommodation_rmd.html"><i class="fas fa-bed"></i> 住宿</a>
+            </div>
+          </li>
+          <li class="nav-item  active">
+            <a class="nav-link" href="content.html">留言區</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              網站簡介
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="webintro.html"><i class="far fa-address-card"></i> 網站介紹</a>
+
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline ">
+          <input class="form-inline mr-sm-2 btn-search " type="search" style="border-radius:10px;" placeholder="搜尋"
+            aria-label="Search">
+          <button class="btn btn-sm my-2 my-sm-0 btn-search" type="submit">搜尋</button>
+        </form>
+      </div>
+    </div>
+
+  </nav>
+  <div class="container content">
+    <div class="row justify-content-center">
+      <div class="col-md-8 ">
+        <div class="card">
+          <h5 class="card-header">留言區</h5>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <div class="media-body">
+                  <div class="from-group ">
+                    <h5 class="mt-0">暱稱 : <input type="text" id="Nickname"></h5>
+                    留言內容：
+                    <br>
+                    <textarea class="form-control" rows="3" style="padding-top: 5px;"></textarea>
+                    <div class="button btn btn-light btn-block mt-2" type="submit" onclick="content()">留言</div>
+                  </div>
                 </div>
-            </div>
+              </li>
+              <hr>
+              <li class="media my-4">
+
+                <div class="media-body">
+                  <div class="from-group ">
+                    <h6 class="mt-0">暱稱：</h6>
+                    留言內容：
+                    <p class=""></p>
+                  </div>
+              </li>
+              <hr>
+              <li class="media my-4">
+                <div class="media-body">
+                  <div class="from-group ">
+                    <h6 class="mt-0">暱稱：</h6>
+                    留言內容：
+                    <p class=""></p>
+                  </div>
+                </div>
+              </li>
+              <hr>
+              <li class="media my-4">
+                <div class="media-body">
+                  <div class="from-group ">
+                    <h6 class="mt-0">暱稱：</h6>
+                    留言內容：
+                    <p class=""></p>
+                  </div>
+                </div>
+              </li>
+              <hr>
+              <li class="media my-4">
+                <div class="media-body">
+                  <div class="from-group ">
+                    <h6 class="mt-0">暱稱：</h6>
+                    留言內容：
+                    <p class=""></p>
+                  </div>
+                </div>
+              </li>
+              <hr>
+            </ul>
+          </div>
+
+
         </div>
       </div>
+    </div>
+  </div>
 
-      
-      <footer class="footer mt-auto py-2 text-center">
-        <div class="container">
-          <span>Copyright 2020 JORIO團隊</span>
-        </div>
-      </footer>
+
+  <footer class="footer mt-auto py-2 text-center">
+    <div class="container">
+      <span>Copyright 2020 JORIO團隊</span>
+    </div>
+  </footer>
 </body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>
-      function content(){
-        alert("留言成功");
-      }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a9026f26e3.js" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>
+  function content() {
+    alert("留言成功");
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a9026f26e3.js" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+  integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+
 </html>
