@@ -1,0 +1,65 @@
+@media (min-width: 1200px){
+    #headingGroup h1{
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+body{
+    background-color: #B8B8B8;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.blurb h2{
+    color:#4E4A45;
+    font-weight:  100;
+    font-size: 2.5rem;
+}
+.blurb p{
+    color: #7C7C7C;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.blurb span,a{
+    color:#7C7C7C;
+    font-weight: 100;
+    font-size:0.85rem;
+}
+.blurb a:hover{
+    color:#4E4A45;
+}
+.blurb .fa-paper-plane{
+    color:#7C7C7C;
+}
+.content{
+    margin-top:80px;
+}
+#mainNavbar{
+    background-color: rgb(134, 134, 134);
+    font-size: 1.5rem;
+    font-weight:  100;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+}
+
+#mainNavbar .nav-link:hover{
+    color:#4E4A45;
+}
+
+#mainNavbar .navbar-brand{
+    color: #4E4A45;
+    font-size:1.5rem;
+    
+}
+
+#headingGroup span{
+    color:#4E4A45;
+}
+
+
+.navbar.scrolled {
+    background-color: rgb(133, 125, 125);
+}
