@@ -34,6 +34,7 @@ body{
 }
 .content{
     margin-top:80px;
+    margin-bottom:100px;
 }
 #mainNavbar{
     background-color: rgb(134, 134, 134);
